@@ -11,9 +11,9 @@ import java.util.regex.Pattern;
 
 public class Day04B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         final ArrayList<Map<String, String>> list = new ArrayList<Map<String, String>>();
         Map<String, String> keyMap = new HashMap<>();
@@ -57,8 +57,8 @@ public class Day04B {
         eyeColors.add("hzl");
         eyeColors.add("oth");
 
-        Pattern hairColorPattern = Pattern.compile("^#[0-9a-fA-F]{6}$", Pattern.CASE_INSENSITIVE);
-        Pattern passportIdPattern = Pattern.compile("^[0-9]{9}$", Pattern.CASE_INSENSITIVE);
+        final Pattern hairColorPattern = Pattern.compile("^#[0-9a-fA-F]{6}$", Pattern.CASE_INSENSITIVE);
+        final Pattern passportIdPattern = Pattern.compile("^[0-9]{9}$", Pattern.CASE_INSENSITIVE);
 
         int valid = 0;
         for (final Map<String, String> map : list) {

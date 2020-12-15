@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Day11B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         ArrayList<ArrayList<Seat>> seats = new ArrayList<>();
         String readLine;

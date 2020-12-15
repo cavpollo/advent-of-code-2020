@@ -8,9 +8,9 @@ import java.util.List;
 
 public class Day06B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         final List<List<Character>> list = new ArrayList<>();
         List<Character> characterList = new ArrayList<>();

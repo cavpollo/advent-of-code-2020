@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Day01B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("feed nums:");
 

@@ -13,9 +13,9 @@ public class Day10B {
     public static HashMap<Integer, Long> positionCombinationsCache = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         final ArrayList<Long> adapterList = new ArrayList<>();
         String readLine;

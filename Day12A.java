@@ -11,11 +11,11 @@ import java.util.regex.Pattern;
 
 public class Day12A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
-        Pattern linePattern = Pattern.compile("^([a-z]+)([0-9]+)$", Pattern.CASE_INSENSITIVE);
+        final Pattern linePattern = Pattern.compile("^([a-z]+)([0-9]+)$", Pattern.CASE_INSENSITIVE);
 
         ArrayList<Direction> directions = new ArrayList<>();
         String readLine;
@@ -83,7 +83,7 @@ public class Day12A {
 
 
         final Instant finish = Instant.now();
-        final long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+        final long timeElapsed = Duration.between(start, finish).toMillis();
 
         System.out.println("x " + x + " y " + y + " manhattan distance " + (Math.abs(x) + Math.abs(y)) + " in " + timeElapsed + "ms");
     }

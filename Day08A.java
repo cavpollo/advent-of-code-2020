@@ -11,11 +11,11 @@ import java.util.regex.Pattern;
 
 public class Day08A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
-        Pattern linePattern = Pattern.compile("^([a-z]+) ([\\+\\-]+)([0-9]+)$", Pattern.CASE_INSENSITIVE);
+        final Pattern linePattern = Pattern.compile("^([a-z]+) ([\\+\\-]+)([0-9]+)$", Pattern.CASE_INSENSITIVE);
 
         final ArrayList<Instruction> instructionList = new ArrayList<>();
         String readLine;

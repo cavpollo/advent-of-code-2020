@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Day11A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         ArrayList<ArrayList<Seat>> seats = new ArrayList<>();
         String readLine;
@@ -98,7 +98,7 @@ public class Day11A {
         }
 
         final Instant finish = Instant.now();
-        final long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+        final long timeElapsed = Duration.between(start, finish).toMillis();
 
         System.out.println("After " + round + "th round the final OccupiedSeatCount is " + finalOccupiedCount + " in " + timeElapsed + "ms");
     }

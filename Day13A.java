@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Day13A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         String readFirstLine = bufferedReader.readLine();
         int currentTime = Integer.parseInt(readFirstLine.trim());
@@ -52,7 +52,7 @@ public class Day13A {
 
 
         final Instant finish = Instant.now();
-        final long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+        final long timeElapsed = Duration.between(start, finish).toMillis();
 
         System.out.println("closestBus " + closestBus + " wait " + (closestBus - (currentTime % closestBus)) + " yields " + (closestBus * (closestBus - (currentTime % closestBus))) + " in " + timeElapsed + "ms");
     }

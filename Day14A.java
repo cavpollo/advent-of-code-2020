@@ -15,12 +15,12 @@ import java.util.regex.Pattern;
 
 public class Day14A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
-        Pattern maskPattern = Pattern.compile("^mask = ([01X]+)$", Pattern.CASE_INSENSITIVE);
-        Pattern memAssignPattern = Pattern.compile("^mem\\[(\\d+)\\] = (\\d+)$", Pattern.CASE_INSENSITIVE);
+        final Pattern maskPattern = Pattern.compile("^mask = ([01X]+)$", Pattern.CASE_INSENSITIVE);
+        final Pattern memAssignPattern = Pattern.compile("^mem\\[(\\d+)\\] = (\\d+)$", Pattern.CASE_INSENSITIVE);
 
         final ArrayList<MaskMem> maskMems = new ArrayList<>();
         MaskMem newMaskMem = null;
@@ -93,7 +93,7 @@ public class Day14A {
         final BigInteger sum = memory.values().stream().reduce(BigInteger.ZERO, BigInteger::add);
 
         final Instant finish = Instant.now();
-        final long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+        final long timeElapsed = Duration.between(start, finish).toMillis();
 
         System.out.println("Sum of memory is " + sum + " in " + timeElapsed + "ms");
     }

@@ -13,9 +13,9 @@ import java.util.Comparator;
 
 public class Day13B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         bufferedReader.readLine(); // Throw away the value
 
@@ -84,7 +84,7 @@ public class Day13B {
         }
 
         final Instant finish = Instant.now();
-        final long timeElapsed = Duration.between(start, finish).toMillis();  //in millis
+        final long timeElapsed = Duration.between(start, finish).toMillis();
 
         System.out.println("Using counter " + counter + ", at " + base + " all buses depart in order. Took " + timeElapsed + "ms");
     }

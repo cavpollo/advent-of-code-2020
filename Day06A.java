@@ -9,9 +9,9 @@ import java.util.Set;
 
 public class Day06A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         final ArrayList<Set<Character>> list = new ArrayList<>();
         Set<Character> characterSet = new HashSet<>();

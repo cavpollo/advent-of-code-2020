@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 public class Day02B {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
         final ArrayList<Password> passwordList = new ArrayList<>();
         String readLine;

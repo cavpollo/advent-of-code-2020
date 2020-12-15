@@ -11,12 +11,12 @@ import java.util.regex.Pattern;
 
 public class Day07A {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("feed values:");
+        System.out.println("Paste the input::");
 
-        Pattern outerBagPattern = Pattern.compile("^([a-z]+ [a-z]+) bags", Pattern.CASE_INSENSITIVE);
-        Pattern innerBagsPattern = Pattern.compile("([0-9]+) ([a-z]+ [a-z]+) bags?[\\,\\.]", Pattern.CASE_INSENSITIVE);
+        final Pattern outerBagPattern = Pattern.compile("^([a-z]+ [a-z]+) bags", Pattern.CASE_INSENSITIVE);
+        final Pattern innerBagsPattern = Pattern.compile("([0-9]+) ([a-z]+ [a-z]+) bags?[\\,\\.]", Pattern.CASE_INSENSITIVE);
 
         final ArrayList<Bag> bagList = new ArrayList<>();
         String readLine;
