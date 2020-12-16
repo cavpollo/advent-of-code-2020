@@ -13,7 +13,7 @@ public class Day12B {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final Pattern linePattern = Pattern.compile("^([a-z]+)([0-9]+)$", Pattern.CASE_INSENSITIVE);
 

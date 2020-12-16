@@ -11,7 +11,7 @@ public class Day06A {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final ArrayList<Set<Character>> list = new ArrayList<>();
         Set<Character> characterSet = new HashSet<>();

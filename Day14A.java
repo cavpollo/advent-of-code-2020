@@ -8,7 +8,6 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,7 +16,7 @@ public class Day14A {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final Pattern maskPattern = Pattern.compile("^mask = ([01X]+)$", Pattern.CASE_INSENSITIVE);
         final Pattern memAssignPattern = Pattern.compile("^mem\\[(\\d+)\\] = (\\d+)$", Pattern.CASE_INSENSITIVE);

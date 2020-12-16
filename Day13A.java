@@ -11,7 +11,7 @@ public class Day13A {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         String readFirstLine = bufferedReader.readLine();
         int currentTime = Integer.parseInt(readFirstLine.trim());

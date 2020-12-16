@@ -9,7 +9,7 @@ public class Day03B {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final ArrayList<String> treeLines = new ArrayList<>();
         String readLine;

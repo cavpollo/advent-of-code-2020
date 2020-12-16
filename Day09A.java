@@ -10,7 +10,7 @@ public class Day09A {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final ArrayList<Long> codeList = new ArrayList<>();
         String readLine;

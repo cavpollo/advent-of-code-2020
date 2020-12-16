@@ -13,7 +13,7 @@ public class Day07A {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final Pattern outerBagPattern = Pattern.compile("^([a-z]+ [a-z]+) bags", Pattern.CASE_INSENSITIVE);
         final Pattern innerBagsPattern = Pattern.compile("([0-9]+) ([a-z]+ [a-z]+) bags?[\\,\\.]", Pattern.CASE_INSENSITIVE);

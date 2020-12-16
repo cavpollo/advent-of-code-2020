@@ -19,7 +19,7 @@ public class Day14B {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         final Pattern maskPattern = Pattern.compile("^mask = ([01X]+)$", Pattern.CASE_INSENSITIVE);
         final Pattern memAssignPattern = Pattern.compile("^mem\\[(\\d+)\\] = (\\d+)$", Pattern.CASE_INSENSITIVE);

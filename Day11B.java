@@ -11,7 +11,7 @@ public class Day11B {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         ArrayList<ArrayList<Seat>> seats = new ArrayList<>();
         String readLine;

@@ -15,7 +15,7 @@ public class Day13B {
     public static void main(String[] args) throws IOException {
         final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Paste the input::");
+        System.out.println("Paste the input:");
 
         bufferedReader.readLine(); // Throw away the value
 
