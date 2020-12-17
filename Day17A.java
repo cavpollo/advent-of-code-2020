@@ -51,9 +51,9 @@ public class Day17A {
                 }
             }
 
-            for (final Map.Entry<XYZ, Integer> xyzIntegerEntry : neighborCubeCounter.entrySet()) {
-                if (xyzIntegerEntry.getValue() == 3 && !cubes.contains(xyzIntegerEntry.getKey())) {
-                    newCubes.add(xyzIntegerEntry.getKey());
+            for (final Map.Entry<XYZ, Integer> neighborCubeCount : neighborCubeCounter.entrySet()) {
+                if (neighborCubeCount.getValue() == 3 && !cubes.contains(neighborCubeCount.getKey())) {
+                    newCubes.add(neighborCubeCount.getKey());
                 }
             }
 
